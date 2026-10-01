@@ -1,0 +1,23 @@
+.container{
+
+}
+
+body{
+    margin: 0;
+}
+
+.element {
+    color:white;
+}
+
+.element.element-1 {
+    background-color: red;
+}
+
+.element.element-2 {
+    background-color: green;
+}
+
+.element.element-3 {
+    background-color: blue;
+}

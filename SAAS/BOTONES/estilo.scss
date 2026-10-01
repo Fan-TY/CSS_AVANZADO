@@ -1,0 +1,19 @@
+$color-base: red;
+$fs: 16px;
+$clss: for !default;
+
+@for $i from 1 through 4{
+    .#{$clss}-#{$i}{
+        background-color: darken($color-base, $i * 7%);
+        border: none;
+        padding: 20px;
+        font-size: $fs + $i * 3px;
+
+        &:hover{  //&: aplica una pseudoclase a un selector anidado
+            background-color: lighten($color-base, $i * 7%);
+            
+        } 
+    }
+
+    
+}   

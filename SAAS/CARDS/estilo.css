@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  min-height: 100vh;
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  min-height: 100vh;
+  */
+  /*  COLUMNA GRID
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  */
+}
+
+.for-1 {
+  background-color: rgb(219.3, 0, 0);
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.for-1 h1 {
+  font-size: 20px;
+  margin: 0px;
+}
+.for-1 p {
+  font-size: 15px;
+  margin: 0px;
+}
+.for-1:hover {
+  background-color: rgb(255, 35.7, 35.7);
+}
+
+.for-2 {
+  background-color: rgb(183.6, 0, 0);
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.for-2 h1 {
+  font-size: 20px;
+  margin: 0px;
+}
+.for-2 p {
+  font-size: 15px;
+  margin: 0px;
+}
+.for-2:hover {
+  background-color: rgb(255, 71.4, 71.4);
+}
+
+.for-3 {
+  background-color: rgb(147.9, 0, 0);
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.for-3 h1 {
+  font-size: 20px;
+  margin: 0px;
+}
+.for-3 p {
+  font-size: 15px;
+  margin: 0px;
+}
+.for-3:hover {
+  background-color: rgb(255, 107.1, 107.1);
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,39 @@
+.for-1 {
+  background-color: rgb(219.3, 0, 0);
+  border: none;
+  padding: 20px;
+  font-size: 19px;
+}
+.for-1:hover {
+  background-color: rgb(255, 35.7, 35.7);
+}
+
+.for-2 {
+  background-color: rgb(183.6, 0, 0);
+  border: none;
+  padding: 20px;
+  font-size: 22px;
+}
+.for-2:hover {
+  background-color: rgb(255, 71.4, 71.4);
+}
+
+.for-3 {
+  background-color: rgb(147.9, 0, 0);
+  border: none;
+  padding: 20px;
+  font-size: 25px;
+}
+.for-3:hover {
+  background-color: rgb(255, 107.1, 107.1);
+}
+
+.for-4 {
+  background-color: rgb(112.2, 0, 0);
+  border: none;
+  padding: 20px;
+  font-size: 28px;
+}
+.for-4:hover {
+  background-color: rgb(255, 142.8, 142.8);
+}/*# sourceMappingURL=estilo.css.map */

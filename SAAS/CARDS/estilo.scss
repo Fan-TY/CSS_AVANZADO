@@ -1,0 +1,56 @@
+$color-base: red;
+$clss: for !default;
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    //grid-auto-flow: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
+
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    min-height: 100vh;
+    */
+
+    /*  COLUMNA GRID
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    */
+}
+
+@for $i from 1 to 4{
+    .#{$clss}-#{$i}{
+        background-color: darken($color-base, $i * 7%);
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+
+        h1{
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        p{
+            font-size: 15px;
+            margin: 0px;
+        }
+
+
+        &:hover{  //&: aplica una pseudoclase a un selector anidado
+            background-color: lighten($color-base, $i * 7%);
+            
+        } 
+    }
+}
+
