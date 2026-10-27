@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  height: 70px;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  width: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+ul li a span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.servicios {
+  --color-fondo: yellow;
+}
+
+.proyectos {
+  --color-fondo: green;
+}
+
+.recursos {
+  --color-fondo: red;
+}
+
+.contacto {
+  --color-fondo: purple;
+}
+
+.servicios, .proyectos, .recursos, .contacto {
+  border-top: 0.3em solid var(--color-fondo);
+}
+.servicios::before, .proyectos::before, .recursos::before, .contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-fondo);
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+.servicios:hover span, .proyectos:hover span, .recursos:hover span, .contacto:hover span {
+  color: black;
+}
+.servicios:hover::before, .proyectos:hover::before, .recursos:hover::before, .contacto:hover::before {
+  transform: scaleY(1);
+}/*# sourceMappingURL=transiciones.css.map */

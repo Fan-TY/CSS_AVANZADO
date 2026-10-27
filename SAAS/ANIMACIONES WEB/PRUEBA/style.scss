@@ -1,0 +1,80 @@
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition:width 2s, background-color 2s, height 2s;
+}
+
+.cuadrado:hover{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.cuadrado1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition:width 2s, background-color 2s, height 2s;
+}
+
+.cuadrado1:hover{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+#c1{
+    transition-timing-function: linear;
+}
+
+#c2{
+    transition-timing-function: ease-in-out;
+}
+
+#c3{
+    transition-timing-function: ease;
+}
+#c4{
+    transition-timing-function: ease-in;
+}
+
+#c5{
+    transition-timing-function: ease-out;
+}
+
+.container1, .container2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cuadrado3{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition:width 2s, background-color 2s, height 2s, transform 2s;
+}
+
+.cuadrado3:hover{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    transform: rotate(360deg);
+}
+
+.cuadrado4{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transition:width 2s,  height 2s , background-color 2s;
+    transition-delay: 3s;
+}
+
+.cuadrado4:hover{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
