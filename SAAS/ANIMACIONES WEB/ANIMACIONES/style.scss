@@ -1,0 +1,148 @@
+$color1: red;
+$color2: purple;
+$color3: blue;
+$color4: orange;
+$color5: brown;
+
+body{
+    margin: 0;
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cuadrado1{
+    width: 100px;
+    height: 100px;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    background-color: $color3;
+    animation-iteration-count:infinite;
+    //position: relative;
+
+}
+
+@keyframes myAnimation {
+    from{background-color: $color3;}  //0%
+    to{background-color: $color2; left:200px;}    //100%
+}
+.cuadrado2{
+    width: 100px;
+    height: 100px;
+    animation-name: myAnimation2;
+    animation-duration: 4s;
+    background-color: $color1;
+    animation-iteration-count:infinite;
+}
+
+@keyframes myAnimation2 {
+    0% {background-color: $color1;}
+    25%{background-color: $color4 ;}
+    50%{background-color: $color2;}
+    100%{background-color: $color3;}
+    
+}
+
+.cuadrado3{
+    width: 100px;
+    height: 100px;
+    background-color: $color4;
+    animation-name: myAnimation3;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+}
+
+
+
+@keyframes myAnimation3{
+    0% {background-color: $color5;}
+    25%{background-color: $color4;}
+    50%{background-color: $color3;}
+    70%{background-color: $color2;}
+    100%{background-color: $color1;}
+}
+
+$color6: lightgreen;
+$color7: green;
+$color8: darkgreen;
+
+
+.contenedor2{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    background-color: black;
+}
+
+.cuadrado4{
+    --colorFondo: #{$color6};
+}
+.cuadrado5{
+    --colorFondo: #{$color7};
+}
+.cuadrado6{
+    --colorFondo:#{$color8};
+}
+
+
+.cuadrado4, .cuadrado5, .cuadrado6{
+    width: 100px;
+    height: 100px;
+    background-color: var(--colorFondo);
+    animation-name: myAnimation4;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;  //3
+
+}
+
+@keyframes myAnimation4{
+    to{background-color: $color4;}
+}
+
+
+.contenedor3{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    gap:40px;
+}
+
+$colorA: #ff6b35;   // naranja quemado
+$colorB: #f7c59f;   // durazno
+$colorC: #8e3b46;   // vino
+$value: for;
+
+$calidos: $colorA, $colorB, $colorC;
+
+@for $i from 1 through 3{
+    .#{$value}#{$i}{
+        width: 100px;
+        height: 100px;
+        background-color: nth($calidos, $i );
+        animation-name: myAnimationX;
+        animation-duration:9s;
+        animation-delay:-2s;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes myAnimationX{
+        0%   { background-color: $colorA; }
+        50%  { background-color: $colorB; }
+        100% { background-color: $colorC; }
+    }
+

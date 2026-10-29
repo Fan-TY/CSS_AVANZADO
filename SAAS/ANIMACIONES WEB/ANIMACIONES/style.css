@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+}
+
+.contenedor1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cuadrado1 {
+  width: 100px;
+  height: 100px;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  background-color: blue;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: purple;
+    left: 200px;
+  }
+}
+.cuadrado2 {
+  width: 100px;
+  height: 100px;
+  animation-name: myAnimation2;
+  animation-duration: 4s;
+  background-color: red;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+.cuadrado3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  animation-name: myAnimation3;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation3 {
+  0% {
+    background-color: brown;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: blue;
+  }
+  70% {
+    background-color: purple;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.contenedor2 {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  background-color: black;
+}
+
+.cuadrado4 {
+  --colorFondo: lightgreen;
+}
+
+.cuadrado5 {
+  --colorFondo: green;
+}
+
+.cuadrado6 {
+  --colorFondo:darkgreen;
+}
+
+.cuadrado4, .cuadrado5, .cuadrado6 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--colorFondo);
+  animation-name: myAnimation4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation4 {
+  to {
+    background-color: orange;
+  }
+}
+.contenedor3 {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 40px;
+}
+
+.for1 {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6b35;
+  animation-name: myAnimationX;
+  animation-duration: 9s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+}
+
+.for2 {
+  width: 100px;
+  height: 100px;
+  background-color: #f7c59f;
+  animation-name: myAnimationX;
+  animation-duration: 9s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+}
+
+.for3 {
+  width: 100px;
+  height: 100px;
+  background-color: #8e3b46;
+  animation-name: myAnimationX;
+  animation-duration: 9s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimationX {
+  0% {
+    background-color: #ff6b35;
+  }
+  50% {
+    background-color: #f7c59f;
+  }
+  100% {
+    background-color: #8e3b46;
+  }
+}/*# sourceMappingURL=style.css.map */
